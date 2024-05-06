@@ -7,8 +7,6 @@ test("has title", async ({ page }) => {
   // // Expect a title "to contain" a substring.
   // await expect(page).toHaveTitle(/Playwright/);
 
-  // await page.goto("https://zenhabits.net");
-
   await page.goto("https://www.netflix.com/gb/");
 
   await expect(page.getByRole("banner").locator("svg")).toBeVisible();
